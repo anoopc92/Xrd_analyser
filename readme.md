@@ -1,12 +1,9 @@
-Here’s a **professional and visually engaging README.md** you can use for your **Streamlit-based XRD Analysis App**.
-It’s designed to look great on GitHub, attract attention, and clearly explain your project.
 
----
 
 # 🧪 XRD Analysis App 
 
 **An Interactive Streamlit Application for X-Ray Diffraction (XRD) Data Processing, Peak Fitting, and Phase Identification**
-App link: https://xrdanalyser-cvcgecjfwqmq422kdks8uj.streamlit.app/
+
 [![Streamlit App](https://img.shields.io/badge/Run%20App-Open%20in%20Streamlit-brightgreen?logo=streamlit)](https://your-streamlit-app-url-here)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -15,7 +12,7 @@ App link: https://xrdanalyser-cvcgecjfwqmq422kdks8uj.streamlit.app/
 
 ## 🌟 Overview
 
-This app provides a **complete end-to-end pipeline** for analyzing **XRD (X-Ray Diffraction)** data.
+This app provides a **complete end-to-end pipeline** for analyzing **XRD (X-Ray Diffraction)** data. App link: https://xrdanalyser-cvcgecjfwqmq422kdks8uj.streamlit.app/
 It automates every stage — from data import to crystallite size analysis and phase identification — powered by **Plotly, SciPy, lmfit, and the Materials Project API**.
 
 Users can:
