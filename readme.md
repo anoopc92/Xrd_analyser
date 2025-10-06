@@ -1,3 +1,188 @@
+Here’s a **professional and visually engaging README.md** you can use for your **Streamlit-based XRD Analysis App**.
+It’s designed to look great on GitHub, attract attention, and clearly explain your project.
+
+---
+
+# 🧪 XRD Analysis App
+
+**An Interactive Streamlit Application for X-Ray Diffraction (XRD) Data Processing, Peak Fitting, and Phase Identification**
+
+[![Streamlit App](https://img.shields.io/badge/Run%20App-Open%20in%20Streamlit-brightgreen?logo=streamlit)](https://your-streamlit-app-url-here)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+## 🌟 Overview
+
+This app provides a **complete end-to-end pipeline** for analyzing **XRD (X-Ray Diffraction)** data.
+It automates every stage — from data import to crystallite size analysis and phase identification — powered by **Plotly, SciPy, lmfit, and the Materials Project API**.
+
+Users can:
+
+* Upload XRD files in multiple formats (`.csv`, `.txt`, `.xy`, `.uxd`, `.raw`)
+* Preprocess noisy spectra using **asymmetric least squares (ALS)** baseline correction
+* Detect and fit peaks using **Voigt profiles**
+* Perform **Scherrer and Williamson–Hall** crystallite size analysis
+* Match patterns with reference data from the **Materials Project**
+* Visualize all results interactively with **Plotly**
+
+---
+
+## 🚀 Features
+
+| Feature                           | Description                                                 |
+| --------------------------------- | ----------------------------------------------------------- |
+| 🔍 **Multi-format File Loader**   | Supports `.csv`, `.txt`, `.xy`, `.uxd`, `.raw` XRD data     |
+| 🧹 **Preprocessing Pipeline**     | Smoothing, baseline correction, normalization               |
+| 📈 **Peak Detection & Fitting**   | Voigt profile fitting using `lmfit`                         |
+| 🧮 **Crystallite Size & Strain**  | Scherrer and Williamson–Hall analyses                       |
+| 🧠 **Phase Identification**       | Automated matching using **Materials Project REST API**     |
+| 🎨 **Interactive Visualizations** | 2θ patterns, fitted peaks, WH plots, and phase match tables |
+| 💾 **Reproducible Reports**       | Export full HTML analysis reports                           |
+
+---
+
+## 🧰 Tech Stack
+
+* **Frontend:** [Streamlit](https://streamlit.io)
+* **Computation:** `numpy`, `scipy`, `lmfit`, `pymatgen`, `mp-api`
+* **Visualization:** `plotly`
+* **Data Models:** `dataclasses`, `Enum`
+* **API Integration:** Materials Project via `MPRester`
+
+---
+
+## 📂 Project Structure
+
+```
+xrd-analysis-app/
+│
+├── app.py                 # Streamlit frontend
+├── xrd_pipeline.py        # Core analysis pipeline (file loader, preprocessing, fitting, etc.)
+├── requirements.txt       # Python dependencies
+├── env.txt                # Stores Materials Project API key
+├── sample_data/           # Example XRD datasets
+└── README.md              # Project documentation
+```
+
+---
+
+## ⚙️ Installation
+
+1️⃣ **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/xrd-analysis-app.git
+cd xrd-analysis-app
+```
+
+2️⃣ **Create a virtual environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # or on Windows: venv\Scripts\activate
+```
+
+3️⃣ **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+4️⃣ **Add your Materials Project API key**
+Create a file named `env.txt` in the project root and add:
+
+```
+MP_API_KEY=your_api_key_here
+```
+
+5️⃣ **Run the Streamlit app**
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧪 Example Usage
+
+1. Upload your `.csv` or `.uxd` XRD file
+2. Adjust hyperparameters (smoothing window, peak prominence, etc.)
+3. View:
+
+   * Preprocessed XRD pattern
+   * Detected & fitted peaks
+   * Williamson–Hall plot
+   * Matched phases from Materials Project
+4. Export the full HTML report
+
+---
+
+## 📊 Visualization Preview
+
+| Plot                        | Description                                              |
+| --------------------------- | -------------------------------------------------------- |
+| 🧭 **XRD Pattern**          | Shows raw & preprocessed intensities with detected peaks |
+| 🎯 **Peak Fitting Quality** | Visualizes fitted Voigt parameters (FWHM, position)      |
+| 🧱 **Williamson–Hall Plot** | Calculates strain and crystallite size                   |
+| 🧬 **Phase Match Table**    | Lists top-matched structures from Materials Project      |
+
+---
+
+## 🧠 Scientific Background
+
+* **Baseline Correction:** Asymmetric Least Squares (ALS)
+* **Peak Shape:** Voigt function — convolution of Gaussian and Lorentzian
+* **Crystallite Size:** Scherrer Equation —
+  *D = Kλ / (β cos θ)*
+* **Microstrain:** Derived from Williamson–Hall relation —
+  *β cos θ = Kλ / D + 4ε sin θ*
+
+---
+
+## 🧩 Example Input Format
+
+### CSV Example
+
+```
+2theta,intensity
+10.0,120
+10.1,122
+...
+```
+
+### TXT Example
+
+```
+# Sample: TiO2
+# Wavelength: 1.5406
+10.0  120
+10.1  122
+...
+```
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**.
+You are free to use, modify, and distribute it for research and educational purposes.
+
+---
+
+## 💡 Acknowledgements
+
+* [The Materials Project](https://materialsproject.org/) for crystallographic data
+* [pymatgen](https://pymatgen.org) for materials science utilities
+* [lmfit](https://lmfit.github.io/lmfit-py/) for robust non-linear fitting
+* [Streamlit](https://streamlit.io) for the beautiful web interface
+
+---
+
+
+Would you like me to make this README **automatically detect your Streamlit Cloud app URL** and add a banner + dark theme badges (for GitHub aesthetics)? I can generate the Markdown with your exact hosted app link and color palette next.
+
 🔬 XRD Analysis Pipeline
 
 A comprehensive, end-to-end X-ray Diffraction (XRD) Analysis Pipeline built with Python and deployed as an interactive web app using Streamlit. This tool processes XRD data from various file formats, performs robust peak detection, Voigt-profile fitting, Scherrer and Williamson-Hall analysis, and phase matching with the Materials Project database. Visualize results with interactive Plotly charts and download detailed JSON reports.
