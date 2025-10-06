@@ -3,10 +3,10 @@ It’s designed to look great on GitHub, attract attention, and clearly explain 
 
 ---
 
-# 🧪 XRD Analysis App https://xrdanalyser-cvcgecjfwqmq422kdks8uj.streamlit.app/
+# 🧪 XRD Analysis App 
 
 **An Interactive Streamlit Application for X-Ray Diffraction (XRD) Data Processing, Peak Fitting, and Phase Identification**
-
+App link: https://xrdanalyser-cvcgecjfwqmq422kdks8uj.streamlit.app/
 [![Streamlit App](https://img.shields.io/badge/Run%20App-Open%20in%20Streamlit-brightgreen?logo=streamlit)](https://your-streamlit-app-url-here)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
