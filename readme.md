@@ -331,6 +331,7 @@ Upload the file in the Streamlit app or run:pipeline.run("sample_xrd.csv", mater
 
 
 Check the xrd_outputs folder for JSON reports and HTML plots.
+<img width="1022" height="598" alt="image" src="https://github.com/user-attachments/assets/c07a92d7-ed48-4aac-acda-040933e5ba9d" />
 
 
 🤝 Contributing
